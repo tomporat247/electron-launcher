@@ -5,7 +5,7 @@
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "exe": "electron-packager ./ --platform=win32 --arch=x64",
+    "exe": "electron-packager ./ --icon=assets/launcher.ico --platform=win32 --arch=x64",
     "msi": "node build-utils/installer.js"
   },
   "repository": "https://github.com/electron/electron-quick-start",
@@ -25,6 +25,7 @@
     "electron": "^11.0.1",
     "electron-packager": "^15.1.0",
     "electron-wix-msi": "^3.0.4",
+    "exe-icon-extractor": "^1.0.8",
     "prettier": "^2.2.0"
   }
 }

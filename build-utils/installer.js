@@ -17,7 +17,6 @@ if (!appName || !appDescription || !appManufacturer) {
   const msiCreator = new MSICreator({
     appDirectory: path.resolve(__dirname, `../${appName}-win32-x64`),
     outputDirectory: path.resolve(__dirname, '../windows_installer'),
-    appIconPath: path.resolve(__dirname, '../assets/launcher.ico'),
     description: appDescription,
     exe: appName,
     name: appName,
