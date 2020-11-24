@@ -3,15 +3,18 @@ const { loadConfig, getFromConfig } = require('./utils/config.js');
 
 loadConfig();
 
-function createWindow() {
+async function createWindow() {
   const mainWindow = new BrowserWindow();
 
   mainWindow.maximize();
-  mainWindow.loadURL(getFromConfig('url'));
 
   if (getFromConfig('openDevTools')) {
     mainWindow.webContents.openDevTools();
   }
+
+  mainWindow.loadFile('loader.html');
+  await mainWindow.loadURL(getFromConfig('url'));
+  return mainWindow;
 }
 
 // This method will be called when Electron has finished
