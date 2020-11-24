@@ -16,16 +16,23 @@ You can learn more about each of these components within the [Quick Start Guide]
 To clone and run this repository you'll need [Git](https://git-scm.com) and [Node.js](https://nodejs.org/en/download/) (which comes with [npm](http://npmjs.com)) installed on your computer. From your command line:
 
 ```bash
-***TODO TODO TODO TODO***
 # Clone this repository
-git clone https://github.com/electron/electron-quick-start
+git clone https://github.com/tomporat247/electron-launcher.git
+
 # Go into the repository
-cd electron-quick-start
+cd electron-launcher
+
 # Install dependencies
 npm install
-# Run the app
-npm start
-***TODO TODO TODO TODO***
+
+# To verify that the laucnher works run
+npm run start
+
+# To create an .exe
+npm run package "myAppName"
+
+# To create .msi (after .exe)
+create .exe
 ```
 
 Note: If you're using Linux Bash for Windows, [see this guide](https://www.howtogeek.com/261575/how-to-run-graphical-linux-desktop-applications-from-windows-10s-bash-shell/) or use `node` from the command prompt.
