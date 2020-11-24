@@ -5,7 +5,7 @@ loadConfig();
 
 async function createWindow() {
   const mainWindow = new BrowserWindow();
-
+  mainWindow.setMenu(null);
   mainWindow.maximize();
 
   if (getFromConfig('openDevTools')) {
