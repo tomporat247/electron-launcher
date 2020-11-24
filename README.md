@@ -35,7 +35,7 @@ npm run start
 npm run exe "myAppName"
 
 # To create .msi
-based on this guide: https://ourcodeworld.com/articles/read/927/how-to-create-a-msi-installer-in-windows-for-an-electron-framework-application
+based on the following guide: https://ourcodeworld.com/articles/read/927/how-to-create-a-msi-installer-in-windows-for-an-electron-framework-application
 steps:
     1. create .exe
     2. install WiX ToolSet from https://github.com/wixtoolset/wix3/releases (.exe file)
