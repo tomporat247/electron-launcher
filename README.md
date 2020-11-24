@@ -32,6 +32,7 @@ npm run start
 
 ```bash
 # To create an .exe
+change the "configFilePath" value in config.js to the desired path
 npm run exe "myAppName"
 
 # To create .msi
