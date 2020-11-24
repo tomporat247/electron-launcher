@@ -8,11 +8,11 @@ async function createWindow() {
   if (!getFromConfig('keepMenu')) {
     mainWindow.setMenu(null);
   }
-  mainWindow.maximize();
-
   if (getFromConfig('openDevTools')) {
     mainWindow.webContents.openDevTools();
   }
+
+  mainWindow.maximize();
 
   mainWindow.loadFile('loader.html');
   await mainWindow.loadURL(getFromConfig('url'));
