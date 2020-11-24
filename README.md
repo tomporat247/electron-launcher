@@ -42,7 +42,7 @@ steps:
         a. if prompted to instal .net 3.5.1 - do so from https://www.microsoft.com/en-us/download/details.aspx?id=22
     3. open Wix ToolSet and click on "Install"
     4. add to Windows` PATH:
-        a. locate the Wix ToolSet bin folder (should be C:\Program Files (x86)\WiX Toolset v3.11\bin)
+        a. locate the Wix ToolSet bin folder (should be "C:\Program Files (x86)\WiX Toolset v3.11\bin")
         b. open "Edit the system environment varaibles" on Windows
         c. click on "Environment Variables"
         d. add the path found on step 4.a to the Path system variable
