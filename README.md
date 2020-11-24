@@ -32,7 +32,7 @@ npm run start
 
 ```bash
 # To create an .exe
-npm run package "myAppName"
+npm run exe "myAppName"
 
 # To create .msi
 based on this guide: https://ourcodeworld.com/articles/read/927/how-to-create-a-msi-installer-in-windows-for-an-electron-framework-application
@@ -46,10 +46,12 @@ steps:
         b. open "Edit the system environment varaibles" on Windows
         c. click on "Environment Variables"
         d. add the path found on step 4.a to the Path system variable
-        e. to verify it worked - open a new cmd and run "candle"
+        e. close all cmds/terminals (the new path won't be recognized)
+        f. to verify it worked - open a new cmd and run "candle"
+    5. npm run msi -- --appName "myAppName" --appDescription "myAppDescription" --appManufacturer "myTeam" --appVersion "appVersion"
 ```
 
 ## Customize
 loader gif - change `assets/loader.gif`
 
-launcher icon - change `assets/launcher.png`
+launcher icon - change `assets/launcher.ico`
