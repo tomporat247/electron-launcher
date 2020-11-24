@@ -23,6 +23,7 @@
   "devDependencies": {
     "electron": "^11.0.1",
     "electron-packager": "^15.1.0",
+    "electron-wix-msi": "^3.0.4",
     "prettier": "^2.2.0"
   }
 }
