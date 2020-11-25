@@ -29,6 +29,7 @@ npm run start
 ```
 
 ## Generate .exe/.msi
+Based on the following [Guide](https://ourcodeworld.com/articles/read/927/how-to-create-a-msi-installer-in-windows-for-an-electron-framework-application)
 
 ```bash
 # To create an .exe
@@ -36,20 +37,18 @@ change the "configFilePath" value in utils/config.js to the desired path
 npm run exe "myAppName"
 
 # To create .msi
-based on the following guide: https://ourcodeworld.com/articles/read/927/how-to-create-a-msi-installer-in-windows-for-an-electron-framework-application
-steps:
-    1. create .exe
-    2. install WiX ToolSet from https://github.com/wixtoolset/wix3/releases (.exe file)
-        a. if prompted to instal .net 3.5.1 - do so from https://www.microsoft.com/en-us/download/details.aspx?id=22
-    3. open Wix ToolSet and click on "Install"
-    4. add to Windows` PATH:
-        a. locate the Wix ToolSet bin folder (should be "C:\Program Files (x86)\WiX Toolset v3.11\bin")
-        b. open "Edit the system environment varaibles" on Windows
-        c. click on "Environment Variables"
-        d. add the path found on step 4.a to the Path system variable
-        e. close all cmds/terminals (the new path won't be recognized)
-        f. to verify it worked - open a new cmd and run "candle"
-    5. npm run msi -- --appName "myAppName" --appDescription "myAppDescription" --appManufacturer "myTeam" --appVersion "appVersion"
+1. create .exe
+2. install WiX ToolSet from https://github.com/wixtoolset/wix3/releases (.exe file)
+    a. if prompted to instal .net 3.5.1 - do so from https://www.microsoft.com/en-us/download/details.aspx?id=22
+3. open Wix ToolSet and click on "Install"
+4. add to Windows` PATH:
+    a. locate the Wix ToolSet bin folder (should be "C:\Program Files (x86)\WiX Toolset v3.11\bin")
+    b. open "Edit the system environment varaibles" on Windows
+    c. click on "Environment Variables"
+    d. add the path found on step 4.a to the Path system variable
+    e. close all cmds/terminals (the new path won't be recognized)
+    f. to verify it worked - open a new cmd and run "candle"
+5. npm run msi -- --appName "myAppName" --appDescription "myAppDescription" --appManufacturer "myTeam" --appVersion "appVersion"
 ```
 
 ## Customize
