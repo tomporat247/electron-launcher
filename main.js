@@ -4,7 +4,10 @@ const { loadConfig, getFromConfig } = require('./utils/config.js');
 loadConfig();
 
 async function createWindow() {
-  const mainWindow = new BrowserWindow();
+  const mainWindow = new BrowserWindow({
+    webPreferences: { nodeIntegration: true, nodeIntegrationInWorker: true, nodeIntegrationInSubFrames: true }
+  });
+
   if (!getFromConfig('keepMenu')) {
     mainWindow.setMenu(null);
   }
