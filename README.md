@@ -33,8 +33,8 @@ Based on the following [Guide](https://ourcodeworld.com/articles/read/927/how-to
 
 ```bash
 # To create an .exe
-change the "configFilePath" value in utils/config.js to the desired path
-npm run exe "myAppName"
+1. change the "configFilePath" value in utils/config.js to the desired path
+2. npm run exe "myAppName"
 
 # To create .msi
 1. create .exe
