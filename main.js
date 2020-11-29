@@ -5,7 +5,12 @@ loadConfig();
 
 async function createWindow() {
   const mainWindow = new BrowserWindow({
-    webPreferences: { nodeIntegration: true, nodeIntegrationInWorker: true, nodeIntegrationInSubFrames: true }
+    webPreferences: {
+      nodeIntegration: true,
+      nodeIntegrationInWorker: true,
+      nodeIntegrationInSubFrames: true,
+      enableRemoteModule: true
+    }
   });
 
   if (!getFromConfig('keepMenu')) {
