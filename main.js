@@ -22,7 +22,7 @@ async function createWindow() {
 
   mainWindow.maximize();
 
-  mainWindow.loadFile('loader.html');
+  await mainWindow.loadFile('loader.html');
   await mainWindow.loadURL(getFromConfig('url'));
   return mainWindow;
 }
