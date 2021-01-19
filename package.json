@@ -19,10 +19,10 @@
   "author": "GitHub",
   "license": "CC0-1.0",
   "dependencies": {
-    "nconf": "^0.11.0"
+    "electron": "^11.0.1",
+    "nconf": "^0.8.5"
   },
   "devDependencies": {
-    "electron": "^11.0.1",
     "electron-packager": "^15.1.0",
     "electron-wix-msi": "^3.0.4",
     "exe-icon-extractor": "^1.0.8",

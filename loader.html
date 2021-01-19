@@ -6,9 +6,11 @@
   </head>
   <style>
     body {
-      background: #3799d6;
       overflow-x: hidden;
       overflow-y: hidden;
+      animation: color-fade-in 0.75s;
+      -webkit-animation: color-fade-in 0.75s;
+      background: #88b1ff;
     }
 
     #loader-container {
@@ -17,11 +19,52 @@
       display: flex;
       align-items: center;
       justify-content: center;
+      opacity: 0;
+      animation: loader-fade-in 1s forwards;
+      -webkit-animation: loader-fade-in 1s forwards;
+      animation-delay: 0.5s;
+      -webkit-animation-delay: 0.5s;
+    }
+
+    @keyframes loader-fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @-webkit-keyframes loader-fade-in {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes color-fade-in {
+      from {
+        background: #454545;
+      }
+      to {
+        background: #88b1ff;
+      }
+    }
+
+    @-webkit-keyframes color-fade-in {
+      from {
+        background: #454545;
+      }
+      to {
+        background: #88b1ff;
+      }
     }
   </style>
   <body>
     <div id="loader-container">
-      <img src="assets/loader.gif" alt="loader" />
+      <img id="loader" src="assets/loader.gif" alt="loader" />
     </div>
   </body>
 </html>
